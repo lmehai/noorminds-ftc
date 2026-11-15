@@ -22,8 +22,7 @@ Run the following from Power shell on time
 > adb connect 192.168.43.1:5555
 
 ## Verify connection to Control Hub
-adb devices
-
+> adb devices
 
 ## Build Command using gradle
 > .\gradlew.bat :TeamCode:assembleDebug
@@ -31,9 +30,12 @@ adb devices
 ## Deploy the Android Package Kit (apk) to Control Hub
 > .\gradlew.bat :TeamCode:installDebug
 
-
 ## uninstall  FTC APK (Clean up)
 > adb uninstall com.qualcomm.ftcrobotcontroller 
+
+##  Monitor FTC Robot Controller logs
+> adb shell
+> logcat -s RobotCore
 
 
 
