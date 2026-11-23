@@ -311,8 +311,8 @@ public class BioBuzzStarterBotTeleopClaud extends OpMode {
 
         // Step 4: Send the final intake power to the intake motor and both servos.
         intake.setPower(intakePower);
-        leftIntakeServo.setPower(intakePower);
-        rightIntakeServo.setPower(intakePower);
+        leftIntakeServo.setPower(-intakePower);
+        rightIntakeServo.setPower(-intakePower);
 
         // Step 5: Show information on the Driver Station screen (telemetry).
         updateTelemetry();
@@ -418,6 +418,7 @@ public class BioBuzzStarterBotTeleopClaud extends OpMode {
         leftDrive.setPower(leftPower);
         rightDrive.setPower(rightPower);
     }
+
 
     /*
      * LAUNCH
