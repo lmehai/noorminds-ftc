@@ -57,7 +57,8 @@ public class BioBuzzStarterBotTeleop extends OpMode {
     private DcMotor leftDrive = null;
     private DcMotor rightDrive = null;
     private DcMotorEx launcher = null;
-    private DcMotor intake = null;
+    private DcMotor
+            intake = null;
     private CRServo leftIntakeServo = null;
     private CRServo rightIntakeServo = null;
     private CRServo windmillServo = null;

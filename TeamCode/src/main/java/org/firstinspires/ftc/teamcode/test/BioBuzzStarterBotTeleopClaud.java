@@ -111,14 +111,14 @@ public class BioBuzzStarterBotTeleopClaud extends OpMode {
     // The right intake servo is mounted facing the opposite way from the left one, so we
     // reverse it. This makes BOTH servos pull elements in at the same time.
     private static final DcMotorSimple.Direction RIGHT_INTAKE_SERVO_DIRECTION = DcMotorSimple.Direction.REVERSE;
-    private static final DcMotorSimple.Direction WINDMILL_DIRECTION = DcMotorSimple.Direction.REVERSE;
+    private static final DcMotorSimple.Direction WINDMILL_DIRECTION = DcMotorSimple.Direction.FORWARD;
 
     // ---------- Launcher speed ----------
     // Speeds are measured in "encoder ticks per second". FTC motors have an encoder with
     // 28 ticks for every full turn of the motor.
     //   To convert to RPM (turns per minute):  RPM = ticks per second / 28 * 60
     //   Example: 1250 ticks/sec = 1250 / 28 * 60 = about 2679 RPM
-    public static final int LAUNCHER_TARGET_VELOCITY = 1250; // the speed we WANT the launcher to reach
+    public static final int LAUNCHER_TARGET_VELOCITY = 1300; // the speed we WANT the launcher to reach
     public static final int LAUNCHER_MIN_VELOCITY = 1200;    // the slowest speed that still makes a good shot
     public static final int LAUNCHER_OFF_VELOCITY = 0;       // speed when the driver is not launching
 
